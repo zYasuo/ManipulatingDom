@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="escalaoProfessor.js"></script>
+</head>
+<body>
+    <h1>Escalação de Time</h1>
+
+        <section>
+            <label for="posicao">Posição:</label>
+                <input type="text" name="posicao" id="posicao">
+            <label for="peso">Nome Jogador:</label>
+                <input type="text" name="nome" id="nome">
+            <label for="numero">Nºda Camisa:</label>
+                <input type="text" name="numero" id="numero">
+                    <button id="escalar" onclick="addJogador()">Escalar</button>
+        </section>
+
+        <h1>Remover Jogador</h1>
+       
+        <section>
+            <label for="remover">Numero:</label>
+                <input type="text" name="remover" id="remover">
+                    <button id="remover" onclick="removeJogador()">Remover</button>
+        </section>
+   
+        <h1>Time</h1>
+    <ul id="jogadores"></ul>
+</body>
+</html>
